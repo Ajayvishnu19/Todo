@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+{% for i in task1 %}
+{{i.name}}
+{{i.priority}}
+{{i.date}}
+{% endfor %}
+{% endblock %}
+</body>
+</html>
